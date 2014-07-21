@@ -1,0 +1,440 @@
+﻿@font-face {
+	font-family: orbitron-black;
+	src: url('themes/Fonts/Orbitron/orbitron-black.otf') format('opentype');
+}
+
+@font-face {
+	font-family: trench100free;
+	src: url('themes/Fonts/Trench/trench100free.otf') format('opentype');
+    
+}
+
+body {
+    font-size: .85em;
+    font-family:"orbitron-black", trench100free , Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+    cursor:url('C:\Users\Technologist\Documents\GitHub\Week5CodeChallenge\Week5CodeChallenge\Week5CodeChallenge\Resources\Crosshair Unavailable.ani');
+}
+
+header, footer, nav, section {
+    margin:0;
+    padding:0;
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 10% 1.5em 20%;
+    display:inline-block;
+    position:relative;
+    float:none;
+    width:50%;
+    min-width:35%;
+    height:auto;
+
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    height:125px;
+    min-height: 75px;
+    width:300px;
+    min-width:auto;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+                            /* Begin Styling
+-----------------------------------------------------------*/
+                            /* reset defaults
+-----------------------------------------------------------*/
+body{
+    margin:0;
+    padding:0;
+    min-width:1400px;
+    
+}
+
+a {
+    cursor: crosshair;
+    text-decoration:none;
+    color:#000D50;
+    background-color:ghostwhite;
+    font:bold 16px;
+    
+}
+    a:hover {
+        transition: all 0.1s;
+        color:#07AEAA;
+        background-color:darkslategray;
+    }
+    a:active {
+        border:inset;
+        color:antiquewhite;
+        background-color:darkslategray;
+    }
+                            /* style all of the header content
+-----------------------------------------------------------*/
+header {
+    
+    position:relative;
+    float:left;
+   
+    z-index:100;
+    width:80%;
+    display:inline-block;
+    align-content:center;
+    border:1px solid;
+    left:10%;
+    right:10%;
+    background-color:ghostwhite;
+    
+}
+
+.logo {
+    position:relative;
+    float:left;
+    width:auto;
+    
+    padding:2em;
+    border:1px solid;
+   
+    
+    
+}
+.logo img {
+    width:300px;
+    height:30%;
+}
+
+#navbar {
+           
+    position:absolute;
+    float:right;
+    width:70%;
+    height:auto;
+    top:0;
+    bottom:0;
+    right:0;
+    display:inline-block; 
+    align-content:center;
+    padding:2em 0;
+    text-align: center;    
+    border-style:solid;
+    border-width:1px;           
+    font-size:1.5em;
+         
+        }
+
+            #navbar ul {
+                margin:0;
+                padding:0;
+            list-style: none;
+            text-decoration:none;
+                      
+            display: inline-block;
+                       
+            }
+                #navbar ul li  {
+                   
+                   border:ridge;                  
+                   color:#050a39;
+                   background-color:ghostwhite;                  
+                   display: inline-block;
+                   margin-left:0.25em;
+                   margin-right:0.25em;
+                
+                
+                
+                }
+                #navbar ul li:hover {
+                    transition: all 0.1s;
+                    color:antiquewhite;
+                    background-color:darkslategray;
+                    
+                }
+                #navbar ul li:active {
+                    border:inset;
+                    color:antiquewhite;
+                    background-color:darkslategray;
+                    
+                }
+
+                            /* style all of the main content
+-----------------------------------------------------------*/
+.main {
+    position:relative;
+    float:left;
+    clear:both;
+    background-color:ghostwhite;
+  
+    padding:0;
+    
+    left:10%;
+    right:10%;
+    width:80%;
+    height:auto;
+    border:1px solid;
+   
+}
+    .main p {
+        font-family: trench100free;
+        font-weight:800;
+        font-size:large;
+    }
+
+    /*now styling the home page content*/
+#mainHome {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+    
+}
+
+
+    #1h {
+        margin:0;
+        padding:0;
+        width:100%;
+        height:auto;
+        
+        position:relative;
+        float:left;
+    }
+    #2h {
+        clear:both;
+    }
+    #3h {
+        margin:0;
+        padding:0;
+        position:relative;
+        float:left;
+    }
+        
+    .thirds {         
+      position:relative;
+      float:left;
+      width:30%;
+      height:250px;
+      padding:0 0.33%;
+      margin:0 1%;
+      border:1px solid;
+      
+    }
+    /*now styling the about page content*/
+#mainAbout {
+    margin:0;
+    padding:0;
+}
+    #ajax {
+        margin:0;
+        padding:0;
+        border-bottom:2px inset;
+    }
+        #ajax ul {
+            
+            text-align:center;
+            list-style:none;
+        }
+            #ajax ul li {
+                color:#000D50;
+                cursor:crosshair;
+                margin:0 5%;
+                padding:0;
+                display:inline-block;
+            }
+            #ajax ul li:hover {
+                transition: all 0.1s;
+                color:#07AEAA;
+                background-color:darkslategray;
+            }
+            #ajax ul li:active {
+                border:inset;
+                color:antiquewhite;
+                background-color:darkslategray;
+        }
+    .mainAjax {
+        margin:0;
+        padding:0 20px;
+    }
+
+
+
+    /*now styling the work page content*/
+#mainWork {
+    margin:0;
+    padding:0 0 0 15%;
+}
+
+.fourths {
+    display:inline-block;
+    margin:10px 5px 5px 10px;
+    padding:0;
+    width:40%;
+    height:350px;
+    border:1px solid;
+
+}
+    .fourths img {
+        margin:0;
+        padding:20px 5px 5px 20px;
+        width:250px;
+        height:200px;
+    }
+    .fourths p {
+        margin-left:10px;
+    }
+
+    /*now styling the careers page content*/
+#mainCareers {
+    margin:0;
+    padding:0;
+    
+    
+}
+    #bkgrnd  {
+        color:#6A613A;
+        position:relative;
+        float:left;
+        margin:0;
+        padding:0;
+        height:625px;
+        width:100%;
+        background: url(Images/ConsiderCareer.png);
+    background-size:100% auto;
+    background-repeat: no-repeat;
+        
+    }
+    #bkgrnd span p {
+        margin:0;
+        padding:10px 0 0 0;
+        margin-left:35%;
+        font-size:xx-large;
+        font-weight:bold;
+        
+    }
+    #1car {
+        margin:0;
+        padding:0;
+        position:relative;
+        float:left;
+        
+        
+    }
+
+    
+    #2car {
+        margin:0;
+        padding:0;
+        position:relative;
+        float:left;
+        
+        
+    }
+    
+    #3car {
+        margin:0 0 0 3px;
+        padding:0 0 0 3px;
+    }
+        #3car p {
+            padding:0 0 0 3px;
+            font-size:xx-large;
+            font-weight:bold;
+        }
+        
+
+
+    /*now styling the contact page content*/
+#mainContact {
+    color:ghostwhite;
+    
+    
+    margin:0;
+    padding:0;
+    
+    background-image: url(Images/ContactBackground.png);
+    background-size:100% auto;
+    background-repeat: no-repeat;
+}
+    
+                    /* style all of the footer content
+-----------------------------------------------------------*/
+footer {
+    position:relative;
+    float:left;
+    clear:both;
+    background-color:ghostwhite;
+    
+    bottom:0;
+    z-index:100;
+    left:10%;
+    right:10%;
+    width:80%;
+    height:auto;
+    border:1px solid;
+    
+
+}
+
+footer span {
+    
+   align-content:center;
+    text-align:left;
+}
+
+footer ul {
+    display:inline-block;
+   margin-left:10%;
+    list-style:none;
+    align-content:center;
+    text-align:center;
+    
+}
+
+footer ul li {
+   
+    display:inline-block;
+    
+    padding:0 2em;
+    
+}

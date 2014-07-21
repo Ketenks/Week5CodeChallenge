@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>MercTec</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../Content/Images/MercTecLogo1.png" alt="" />
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">Base</a></li>
+                <li><a href="@Url.Action("Index", "About")">Debrief</a></li>
+                <li><a href="@Url.Action("Index", "Work")">Projects</a></li>
+                <li><a href="@Url.Action("Index", "Careers")">Careers</a></li>
+                <li><a href="@Url.Action("Index", "Contact")">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        @RenderBody()
+    </div>
+    
+    <footer class="center">
+       <span  style="text-align:left;">Copyright 2014 MercTec, LLC</span>
+        <ul>
+                             <li><a href="@Url.Action("Index", "Home")">Base</a></li>
+                &nbsp;|&nbsp;<li><a href="@Url.Action("Index", "About")">Debrief</a></li>
+                &nbsp;|&nbsp;<li><a href="@Url.Action("Index", "Work")">Projects</a></li>
+                &nbsp;|&nbsp;<li><a href="@Url.Action("Index", "Careers")">Careers</a></li>
+                &nbsp;|&nbsp;<li><a href="@Url.Action("Index", "Contact")">Contact Us</a></li>
+        </ul>
+    </footer>
+   
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/Scripts/Main")
+</body>
+</html>
