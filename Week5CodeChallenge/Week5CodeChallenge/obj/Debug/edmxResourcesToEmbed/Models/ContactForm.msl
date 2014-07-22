@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="ContactFormsModelStoreContainer" CdmEntityContainer="ContactFormsEntities2">
+  <EntityContainerMapping StorageEntityContainer="ContactFormsModel1StoreContainer" CdmEntityContainer="ContactFormsEntities1">
     <EntitySetMapping Name="ContactForms">
-      <EntityTypeMapping TypeName="ContactFormsModel.ContactForm">
+      <EntityTypeMapping TypeName="ContactFormsModel1.ContactForm">
         <MappingFragment StoreEntitySet="ContactForm">
           <ScalarProperty Name="ContactID" ColumnName="ContactID" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />

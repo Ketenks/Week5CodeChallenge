@@ -13,10 +13,10 @@ namespace Week5CodeChallenge.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ContactFormsEntities : DbContext
+    public partial class ContactFormsEntities2 : DbContext
     {
-        public ContactFormsEntities()
-            : base("name=ContactFormsEntities")
+        public ContactFormsEntities2()
+            : base("name=ContactFormsEntities2")
         {
         }
     

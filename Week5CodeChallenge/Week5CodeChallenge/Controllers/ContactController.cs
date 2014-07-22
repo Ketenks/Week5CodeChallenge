@@ -20,7 +20,7 @@ namespace Week5CodeChallenge.Controllers
         [HttpPost]
         public ActionResult Index(Models.ContactForm cf)
         {
-            Models.ContactFormsEntities db = new Models.ContactFormsEntities();
+            Models.ContactFormsEntities2 db = new Models.ContactFormsEntities2();
             db.ContactForms.Add(cf);
             //save changes
             db.SaveChanges();

@@ -112,6 +112,8 @@ a {
         color:antiquewhite;
         background-color:darkslategray;
     }
+
+
                             /* style all of the header content
 -----------------------------------------------------------*/
 header {
@@ -272,15 +274,15 @@ header {
         border-bottom:2px inset;
     }
         #ajax ul {
-            
+            color:#050a39;
             text-align:center;
             list-style:none;
         }
             #ajax ul li {
-                color:#000D50;
+                border:outset;
                 cursor:crosshair;
-                margin:0 5%;
-                padding:0;
+                margin:3px 5%;
+                padding:3px 5px;
                 display:inline-block;
             }
             #ajax ul li:hover {
@@ -293,10 +295,27 @@ header {
                 color:antiquewhite;
                 background-color:darkslategray;
         }
+
+}
     .mainAjax {
         margin:0;
-        padding:0 20px;
+        padding:0;
     }
+        #team {
+            
+            margin:0;
+            width:100%;
+            height:auto;
+        }
+
+        #team img {
+            
+            margin:0;
+            padding:0;
+
+            width:245px;
+            height:auto;
+        }
 
 
 
@@ -438,3 +457,9 @@ footer ul li {
     padding:0 2em;
     
 }
+
+.active {
+    
+    color: #07AEAA;
+    background-color: darkslategray;
+    border: inset;

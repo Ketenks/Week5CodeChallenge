@@ -16,7 +16,7 @@
           <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
           <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
           <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
-          <Property Name="PhoneNumber" Type="int" Nullable="false" />
+          <Property Name="PhoneNumber" Type="nvarchar" Nullable="false" MaxLength="50" />
           <Property Name="CompanyName" Type="nvarchar" Nullable="false" MaxLength="50" />
           <Property Name="ProjectDescription" Type="text" Nullable="false" />
           <Property Name="Comment" Type="text" Nullable="false" />
@@ -26,7 +26,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ContactFormsModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="ContactFormsEntities" p1:LazyLoadingEnabled="true">
+        <EntityContainer Name="ContactFormsEntities2" p1:LazyLoadingEnabled="true">
           <EntitySet Name="ContactForms" EntityType="ContactFormsModel.ContactForm" />
         </EntityContainer>
         <EntityType Name="ContactForm">
@@ -37,7 +37,7 @@
           <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-          <Property Name="PhoneNumber" Type="Int32" Nullable="false" />
+          <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="ProjectDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="Comment" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
@@ -47,7 +47,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ContactFormsModelStoreContainer" CdmEntityContainer="ContactFormsEntities">
+        <EntityContainerMapping StorageEntityContainer="ContactFormsModelStoreContainer" CdmEntityContainer="ContactFormsEntities2">
           <EntitySetMapping Name="ContactForms">
             <EntityTypeMapping TypeName="ContactFormsModel.ContactForm">
               <MappingFragment StoreEntitySet="ContactForm">

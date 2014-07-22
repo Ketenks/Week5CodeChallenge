@@ -20,8 +20,8 @@ namespace Week5CodeChallenge.Models
         public string LastName { get; set; }
         [Required(ErrorMessage="*"), EmailAddress(ErrorMessage="*")]
         public string Email { get; set; }
-        [Required(ErrorMessage="*"), Phone(ErrorMessage="*")]
-        public int PhoneNumber { get; set; }
+        [Required(ErrorMessage="*")]
+        public string PhoneNumber { get; set; }
         [Required(ErrorMessage="*"), MaxLength(50)]
         public string CompanyName { get; set; }
         [Required(ErrorMessage="*")]

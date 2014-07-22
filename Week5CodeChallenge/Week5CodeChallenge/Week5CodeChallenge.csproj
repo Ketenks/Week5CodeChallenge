@@ -163,13 +163,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Bemilin.png" />
+    <Content Include="Content\Images\Boyder.png" />
     <Content Include="Content\Images\CompleteProject.png" />
     <Content Include="Content\Images\ConsiderCareer.png" />
     <Content Include="Content\Images\ContactBackground.png" />
     <Content Include="Content\Images\Crosshair.png" />
     <Content Include="Content\Images\Crosshair1.png" />
+    <Content Include="Content\Images\Gerton.png" />
     <Content Include="Content\Images\GetinTouchProject.png" />
     <Content Include="Content\Images\HighTechProject.png" />
+    <Content Include="Content\Images\Ketenks.png" />
+    <Content Include="Content\Images\Layne.png" />
     <Content Include="Content\Images\MercTecLogo.png" />
     <Content Include="Content\Images\MercTecLogo1.png" />
     <Content Include="Content\Images\MercTecLogo2.png" />
@@ -238,6 +243,18 @@
     <Content Include="Content\themes\Fonts\Trench\TrenchFamily.txt" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\Fonts\Orbitron\orbitron-black.otf" />
+    <Content Include="Content\themes\Fonts\Orbitron\orbitron-bold.otf" />
+    <Content Include="Content\themes\Fonts\Orbitron\orbitron-light.otf" />
+    <Content Include="Content\themes\Fonts\Orbitron\orbitron-medium.otf" />
+    <Content Include="Content\themes\Fonts\Trench\trench100free.otf" />
+    <Content Include="Content\themes\Fonts\WarFont\Typo Oxin free promo.ttf" />
+    <None Include="Content\Images\Crosshair.ani">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Content\Images\RedCrosshair.ani">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EntityDeploy Include="Models\ContactForms.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ContactForms.Designer.cs</LastGenOutput>
@@ -254,18 +271,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ContactForms.edmx</DependentUpon>
       <LastGenOutput>ContactForms.cs</LastGenOutput>
-    </Content>
-    <Content Include="Content\themes\Fonts\Orbitron\orbitron-black.otf" />
-    <Content Include="Content\themes\Fonts\Orbitron\orbitron-bold.otf" />
-    <Content Include="Content\themes\Fonts\Orbitron\orbitron-light.otf" />
-    <Content Include="Content\themes\Fonts\Orbitron\orbitron-medium.otf" />
-    <Content Include="Content\themes\Fonts\Trench\trench100free.otf" />
-    <Content Include="Content\themes\Fonts\WarFont\Typo Oxin free promo.ttf" />
-    <None Include="Content\Images\Crosshair.ani">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <Content Include="Content\Images\RedCrosshair.ani">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\Crosshair Unavailable.ani" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
